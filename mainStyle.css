@@ -1,0 +1,101 @@
+html { 
+    box-sizing: border-box;
+    --main-color: #F03000;
+}
+
+*, ::before, ::after { box-sizing: inherit;}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+
+
+
+
+/* menu */
+.menu__nav{    
+    color: var(--main-color);
+    font-weight: bold;
+    display:flex;
+    justify-content: space-around;
+    margin:10px auto 20px auto
+}
+.menu__nav--link{
+    list-style-type: none; 
+    padding: 15px;
+}
+.menu__nav--link:hover{
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.menu__logo{
+    width: max(200px, 300px); 
+    padding: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* destination - photos */
+.palms{
+    background-image: url(podklady/palmy.jpg);
+}
+.lake{
+    background-image: url(podklady/jezero.jpg);
+}
+.bike{
+    background-image: url(podklady/nakole.jpg);
+}
+.grand{
+    background-image: url(podklady/podkova.jpg);
+}
+.cannary{
+    background-image: url(podklady/zatoka.jpg);
+}
+.mountain{
+    background-image: url(podklady/lodicka.jpg);
+}
+
+.destination{
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.destination__price{
+    background-color: var(--main-color);
+    padding: 10px;
+    display: inline-block;
+}
+
+.destination__description{
+    font-size: 12px;
+}
+
+/* codex */
+.codex{
+    background-color: #F0F0F0;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.codex >*{
+	grid-column: 2;
+}
+
+.codex__icon{
+    grid-column: 1;
+    margin: 0 auto;
+}
+
+.codex__item{
+    color:var(--main-color);
+    margin: 0
+}
