@@ -1,9 +1,12 @@
 @import "menu.css";
+@import "destination.css";
+@import "codex.css";
 
 
 html { 
     box-sizing: border-box;
     --main-color: #F03000;
+    --second-color: #F0F0F0;
 }
 
 *, ::before, ::after { box-sizing: inherit;}
@@ -13,91 +16,11 @@ body{
     margin:10px;
 }
 
-
-/* destination - photos */
-.palms{
-    background-image: url(podklady/palmy.jpg);
+@media (min-width:768px){
+    body{
+        padding: 3rem;
+    }
 }
-.lake{
-    background-image: url(podklady/jezero.jpg);
-}
-.bike{
-    background-image: url(podklady/nakole.jpg);
-}
-.grand{
-    background-image: url(podklady/podkova.jpg);
-}
-.cannary{
-    background-image: url(podklady/zatoka.jpg);
-}
-.mountain{
-    background-image: url(podklady/lodicka.jpg);
-    order:-1;
-}
-
-.destination__rectangle{
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-.destination__rectangle--price{
-    background-color: var(--main-color);
-    padding: 10px;
-    display: inline-block;
-    margin: 0 0 40px 0;
-}
-
-.destination__rectangle--decsription{
-    font-size: 12px;
-}
-
-.bottom{
-    display: grid;
-}
-
-
-/* codex */
-.codex{
-    background-color: #F0F0F0;
-    margin-top: 20px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-}
-
-
-.codex >*{
-    grid-column: 2;
-}
-
-.codex__icon{
-    grid-column: 1;
-    margin: 0 auto;
-}
-
-.codex__title{
-    color:var(--main-color);
-    margin: 0
-}
-
-/* news */
-.news{
-    background-color: #F0F0F0;
-    margin-top: 20px;
-    padding: 20px;
-    font-weight: bold;
-}
-time{
-    color:gray
-}
-.news__title{
-    color:var(--main-color)
-}
-
 
 /* footer */
 footer{

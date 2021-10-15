@@ -1,0 +1,70 @@
+.palms{
+    background-image: url(podklady/palmy.jpg);
+}
+.lake{
+    background-image: url(podklady/jezero.jpg);
+}
+.bike{
+    background-image: url(podklady/nakole.jpg);
+}
+.grand{
+    background-image: url(podklady/podkova.jpg);
+}
+.cannary{
+    background-image: url(podklady/zatoka.jpg);
+}
+.mountain{
+    background-image: url(podklady/lodicka.jpg);
+    order:-1;
+}
+
+.destination__rectangle{
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.destination__rectangle--price{
+    background-color: var(--main-color);
+    padding: 10px;
+    display: inline-block;
+    margin: 0 0 40px 0;
+}
+
+.destination__rectangle--decsription{
+    font-size: 12px;
+}
+
+.bottom{
+    display: grid;
+}
+
+
+@media (min-width:480px){
+    .destination{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px
+    }
+    .palms, .mountain{
+        grid-column: 1/-1
+    }
+    .destination__rectangle{
+        margin-top: 0;
+    }
+}
+
+@media (min-width:769px){
+    .destination{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .palms, .mountain{
+        grid-column: 1/3;
+        grid-row: 1/3
+    }
+
+}
