@@ -4,12 +4,13 @@
     font-weight: bold;
     display:flex;
     justify-content: space-between;
-    margin:10px auto;
+    margin:1rem auto;
     padding: 0;
 }
 .menu__nav--link{
     list-style-type: none; 
-    padding: 15px;
+    padding: 1rem;
+    text-align: center;
 }
 .menu__nav--link:hover{
     background-color: var(--main-color);
@@ -18,17 +19,22 @@
 }
 
 .menu__logo{
-    width: max(200px, 300px); 
-    padding: 30px;
+    width: clamp(200px, 40%, 300px); 
+    padding: 1rem;
     margin: 0 auto;
     display: block;
 }
 
-@media (min-width:480px){
+a{
+    font-size: 14px;
+}
+
+@media (min-width:481px){
     .menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 1rem auto
     }
 
     .menu__logo{
@@ -37,5 +43,18 @@
 
     .menu__nav{    
         margin:0;
+    }
+
+    .menu__nav--link{
+        padding: 0.7rem;
+    }
+}
+
+@media (min-width:769px){
+    .menu__nav--link{
+        padding: 1rem;
+    }
+    a{
+        font-size: 18px;
     }
 }

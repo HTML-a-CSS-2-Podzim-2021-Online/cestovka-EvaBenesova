@@ -16,9 +16,13 @@ body{
     margin:10px;
 }
 
+
+
 @media (min-width:768px){
     body{
-        padding: 3rem;
+        margin: 0 auto;
+        max-width: 1102px;
+        padding: 1rem;
     }
 }
 
@@ -26,9 +30,9 @@ body{
 footer{
     background-color: #444444;
     color: white;
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1rem;
 
 
 }
